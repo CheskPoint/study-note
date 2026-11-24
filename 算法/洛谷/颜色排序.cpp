@@ -7,9 +7,9 @@ void ColorSort(int a[],int n)
     while(j<=k)
         switch(a[j])
         {
-            case 1:temp=a[i];a[i]=a[j];temp=a[j];i++;j++;break;
+            case 1:temp=a[i];a[i]=a[j];a[j]=temp;i++;j++;break;
             case 2:j++;break;
-            case 3:temp=a[j];a[j]=a[k];temp=a[k];j++;k--;break;
+            case 3:temp=a[j];a[j]=a[k];a[k]=temp;j++;k--;break;
         }
 
 }
